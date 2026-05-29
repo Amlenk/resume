@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aman Lenka - Data & AI Consultant Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* EXECUTIVE STYLING AND LAYOUT ENGINE */
+    :root {
+      --primary-color: #0f172a; /* Sleek Slate Blue-Black */
+      --secondary-color: #475569; /* Muted Slate Grey */
+      --accent-color: #2563eb; /* Cobalt consulting blue */
+      --border-color: #cbd5e1;
+      --text-color: #1e293b;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      --font-serif: 'Lora', Georgia, serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f8fafc;
+      color: var(--text-color);
+      font-family: var(--font-sans);
+      font-size: 10.5pt;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* PAGE DESIGN / A4 CALIBRATION */
+    .resume-page {
+      background-color: #ffffff;
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      padding: 15mm 15mm;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      margin-bottom: 4mm;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 3mm;
+    }
+
+    h1 {
+      font-size: 24pt;
+      font-weight: 800;
+      color: var(--primary-color);
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      margin-bottom: 1mm;
+    }
+
+    .subtitle {
+      font-family: var(--font-sans);
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 2mm;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3.5mm;
+      font-size: 9pt;
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
+
+    .contact-info span {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .contact-info a:hover {
+      color: var(--accent-color);
+    }
+
+    .contact-info span:not(:last-child)::after {
+      content: "•";
+      margin-left: 3.5mm;
+      color: var(--border-color);
+      font-weight: bold;
+    }
+
+    /* SECTION LAYOUTS */
+    section {
+      margin-bottom: 4mm;
+    }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.8mm;
+      margin-bottom: 2mm;
+      display: flex;
+      align-items: center;
+    }
+
+    /* SUMMARY */
+    .summary-text {
+      font-family: var(--font-serif);
+      font-size: 9.5pt;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.45;
+    }
+
+    /* WORK EXPERIENCE & PROJECTS */
+    .item {
+      margin-bottom: 3mm;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.5mm;
+    }
+
+    .item-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .item-subtitle {
+      font-size: 9pt;
+      font-weight: 600;
+      color: var(--secondary-color);
+      font-style: italic;
+    }
+
+    .item-date {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: var(--secondary-color);
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 4mm;
+      margin-bottom: 0.8mm;
+      font-size: 9pt;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.35;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 1.5mm;
+      top: 0;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    li strong {
+      color: var(--primary-color);
+    }
+
+    /* SKILLS CATEGORIES */
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2mm;
+    }
+
+    .skills-row {
+      display: grid;
+      grid-template-columns: 38mm 1fr;
+      font-size: 9pt;
+      line-height: 1.35;
+    }
+
+    .skills-category {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .skills-values {
+      color: #334155;
+    }
+
+    /* DUAL COLUMN FOR HIGHLIGHTS / EDUCATION */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6mm;
+    }
+
+    .certifications-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8mm;
+    }
+
+    .cert-item {
+      font-size: 9pt;
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .cert-item strong {
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    /* PRINT CALIBRATION ENGINE */
+    @media print {
+      body {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .resume-page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 12mm 12mm;
+        box-shadow: none;
+        page-break-after: always;
+      }
+      .resume-page:last-child {
+        page-break-after: avoid;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      a {
+        color: #000000 !important;
+        text-decoration: none;
+      }
+    }
+
+    /* STICKY CONTROL BAR FOR BROWSER PREVIEW */
+    .control-bar {
+      width: 210mm;
+      margin: 10px auto -10px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e293b;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      font-family: var(--font-sans);
+    }
+    .control-btn {
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 9.5pt;
+      transition: background 0.15s ease;
+    }
+    .control-btn:hover {
+      background: #1d4ed8;
+    }
+    @media print {
+      .control-bar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BROWSER ONLY CONTROLS -->
+  <div class="control-bar">
+    <div style="font-size: 10pt; font-weight: 500;">📄 Print Preview | Amlenk GitHub Portfolio Calibrated PDF Output</div>
+    <button class="control-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <!-- PAGE 1 -->
+  <div class="resume-page">
+    <header>
+      <h1>Aman Lenka</h1>
+      <div class="subtitle">Data & AI Consultant</div>
+      <div class="contact-info">
+        <span>Dublin, Ireland</span>
+        <span>+353 874788649 (IE) / +91 9003741343 (IN)</span>
+        <span><a href="mailto:amanlenka97@gmail.com">amanlenka97@gmail.com</a></span>
+        <span><a href="https://github.com/Amlenk" target="_blank">github.com/Amlenk</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <div class="summary-text">
+        Analytical and results-driven Data & AI professional with a solid engineering background and an MSc in Data Analytics from the National College of Ireland. Specialized in productionizing deep learning forecast engines, computer vision filters, and Generative AI coaching systems. Expert at leveraging state-of-the-art Agentic AI developer platforms (Google Antigravity SDK) to automate code generation, model optimization, and scale complex data pipelines. Proven track record of executing high-impact, real-world projects, including securing competitive research grants for clinically validated medical diagnostics and deploying real-time API integrations. Actively seeking to leverage multidisciplinary AI capabilities, automated analytics, and advanced predictive modeling as a Consultant within Deloitte South Asia's Data & AI practice.
+      </div>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Trainee – Networking & Telecommunications</span>
+            <span class="item-subtitle">| Bharti Airtel Ltd.</span>
+          </div>
+          <span class="item-date">Jun 2018 – Jul 2018</span>
+        </div>
+        <ul>
+          <li>Analyzed high-volume network telemetry and operational performance metrics to identify data routing bottlenecks, improving data-driven network optimization strategies.</li>
+          <li>Gained hands-on exposure to enterprise-scale telecom databases and performance monitoring dashboards, translating raw infrastructure logs into actionable operational insights.</li>
+          <li>Completed advanced training in LTE/5G network architectures, focusing on data switching center operations and high-availability data flow configurations.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Applied AI & Hardware-Software Projects</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">VeinXplore – Medical Device Innovation</span>
+            <span class="item-subtitle">| Founder & Lead Engineer</span>
+          </div>
+          <span class="item-date">Mar 2018 – Jan 2019</span>
+        </div>
+        <ul>
+          <li>Designed and built a low-cost medical imaging device using Raspberry Pi, OpenCV, and infrared camera arrays to visualize subcutaneous veins in real time.</li>
+          <li>Secured a competitive <strong>1,00,000 INR research grant</strong> from VITTBI against 200+ proposals; led a cross-functional engineering team of 4 through the complete product lifecycle.</li>
+          <li>Deployed real-time computer vision and image processing filters in Python to optimize contrast-to-noise ratios, successfully validating the device in clinical trials at Aravind Eye Hospital.</li>
+          <li>Conducted manufacturing optimization that reduced device production costs by <strong>73%</strong> compared to commercial alternatives while maintaining clinical-grade accuracy.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Low-Cost Slit Lamp for Corneal Diagnostics</span>
+            <span class="item-subtitle">| Research Intern</span>
+          </div>
+          <span class="item-date">May 2018 – Jun 2018</span>
+        </div>
+        <ul>
+          <li>Co-developed a functional corneal topography imaging prototype submitted to UNICEF for a <strong>100K USD</strong> international project grant evaluation.</li>
+          <li>Engineered a servo-controlled imaging system integrating a Raspberry Pi camera module, utilizing computer vision algorithms in Python to extract corneal surface curvature data.</li>
+          <li>Conducted comparative data analysis demonstrating a <strong>65% diagnostic cost reduction</strong> compared to traditional clinical slit lamps without compromising medical diagnostic fidelity.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="resume-page">
+    <section>
+      <h2>Applied AI & Hardware-Software Projects (Continued)</h2>
+      
+      <div class="item" style="margin-top: 1mm;">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Autonomous Surveillance Robot with Real-Time Monitoring</span>
+            <span class="item-subtitle">| Robotics Lead</span>
+          </div>
+          <span class="item-date">Aug 2017</span>
+        </div>
+        <ul>
+          <li>Built an autonomous surveillance robot integrating a Raspberry Pi, ultrasonic/IR/PIR sensors, and real-time live video streaming.</li>
+          <li>Programmed object detection and collision avoidance algorithms in Python using OpenCV, executing real-time data fusion from a multi-sensor array for spatial mapping.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Advanced Data Science & Machine Learning Projects</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">R6 Esports Analytics & AI-Driven Coaching Platform</span>
+            <span class="item-subtitle">| Lead Data Scientist</span>
+          </div>
+          <span class="item-date">Active</span>
+        </div>
+        <ul>
+          <li>Developed an end-to-end data analytics and AI-driven coaching engine utilizing **Streamlit**, **Pandas**, and **LLMs** to ingest, model, and visualize competitive player telemetry.</li>
+          <li>Engineered an **AI Coach module (`ai_coach.py`)** leveraging cognitive models to analyze map layouts, playstyles, and pick/win ratios, generating automated strategic coaching guides.</li>
+          <li>Built a real-time stat-fetching pipeline (`r6data_fetch.py`) integrating with Ubisoft APIs alongside a custom-designed rendering dashboard (`charts.py`, `report.py`).</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Neural Demand Forecasting Engine (LSTM & PyTorch)</span>
+            <span class="item-subtitle">| ML Engineer</span>
+          </div>
+          <span class="item-date">Active</span>
+        </div>
+        <ul>
+          <li>Architected a multi-step deep learning demand forecasting pipeline built on **Keras 3 with a PyTorch Backend**, resampled to hourly intervals to predict grids load 24 hours in advance.</li>
+          <li>Compared **Vanilla, Stacked, and Bidirectional LSTM models**, achieving a **28.8% RMSE improvement (72.54)** over a naïve persistence baseline model.</li>
+          <li>Implemented **Bayesian Uncertainty Quantification** using **Monte Carlo Dropout (100 forward passes)** to estimate prediction interval bandwidths.</li>
+          <li>Deployed an unsupervised residual anomaly detection system that automatically flagged extreme consumption spikes.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Esports Spatial Sensitivity Optimizer (AetherSens)</span>
+            <span class="item-subtitle">| Lead Developer</span>
+          </div>
+          <span class="item-date">Active</span>
+        </div>
+        <ul>
+          <li>Developed a high-precision spatial sensitivity scaling tool using the **Google Antigravity SDK** to build agentic testing and code-generation workflows, accelerating prototyping speed by <strong>40%</strong>.</li>
+          <li>Modeled non-linear zoom multipliers, executing a custom range-fitting optimization algorithm that bypassed standard in-game menu slider limits and eliminated rounding errors.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Delhi LST Bayesian Analysis & Regional Heat Projections</span>
+            <span class="item-subtitle">| Lead Data Scientist</span>
+          </div>
+          <span class="item-date">Active</span>
+        </div>
+        <ul>
+          <li>Built a PyMC-based Bayesian linear regression model using a **NUTS sampler** to estimate the posterior distribution of the annual warming trend (+0.25°C/year) and generated 94% High-Density Interval (HDI) projections.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="edu-grid">
+      <section>
+        <h2>Education</h2>
+        <div class="item" style="margin-bottom: 2.5mm;">
+          <div class="item-header" style="margin-bottom: 0.5mm;">
+            <span class="item-title" style="font-size: 9.5pt;">MSc in Data Analytics</span>
+            <span class="item-date" style="font-size: 8.5pt;">2024 – 2025</span>
+          </div>
+          <div style="font-size: 8.5pt; color: #475569; font-weight: 500; line-height: 1.3;">
+            National College of Ireland, Dublin<br>
+            Focus: GenAI, Deep Learning, Statistics, BI<br>
+            90 ECTS Credits (QQI Level 9)
+          </div>
+        </div>
+        <div class="item" style="margin-bottom: 0;">
+          <div class="item-header" style="margin-bottom: 0.5mm;">
+            <span class="item-title" style="font-size: 9.5pt;">B.Tech in Electronics & Comm.</span>
+            <span class="item-date" style="font-size: 8.5pt;">2015 – 2019</span>
+          </div>
+          <div style="font-size: 8.5pt; color: #475569; font-weight: 500; line-height: 1.3;">
+            VIT Vellore, Tamil Nadu, India<br>
+            CGPA: 8.16 / 10 (Distinction)<br>
+            Focus: Data Structures, DSP, Stats
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <div class="certifications-list">
+          <div class="cert-item">🛡️ <strong>Google AI Fundamentals</strong> — Google</div>
+          <div class="cert-item">🤖 <strong>Building with Claude API</strong> — Anthropic</div>
+          <div class="cert-item">🎓 <strong>MSc in Data Analytics (QQI Level 9)</strong></div>
+        </div>
+      </section>
+    </div>
+
+    <section style="margin-bottom: 0; margin-top: 3mm;">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skills-row">
+          <span class="skills-category">Machine Learning & AI</span>
+          <span class="skills-values">Generative AI (LLMs, Claude API, agentic systems), Deep Learning (LSTMs, PyTorch backend), NLP (BERT), Computer Vision (OpenCV), Bayesian Statistics (PyMC, MCMC)</span>
+        </div>
+        <div class="skills-row">
+          <span class="skills-category">Programming & Data</span>
+          <span class="skills-values">Python (pandas, NumPy, scikit-learn, PyMC, PyTorch, Keras 3, PySpark), SQL (PostgreSQL, MySQL, SQLite)</span>
+        </div>
+        <div class="skills-row">
+          <span class="skills-category">Data Visualization & BI</span>
+          <span class="skills-values">Power BI, Tableau, Streamlit, Matplotlib, Seaborn, Plotly</span>
+        </div>
+        <div class="skills-row">
+          <span class="skills-category">Tools & Environments</span>
+          <span class="skills-values"><strong>Google Antigravity SDK</strong>, <strong>Agentic AI Dev Tools</strong>, Git, Docker, VS Code, Jupyter, Flask, FastAPI</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
