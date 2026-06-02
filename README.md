@@ -15,7 +15,7 @@ Welcome to my professional data science and machine learning engineering portfol
 Explore my core technical projects hosted on GitHub:
 
 1. **[R6 Esports Analytics & AI-Driven Coaching Platform](https://github.com/Amlenk/siege-analytics-coach)**: A full-stack Streamlit application utilizing Ubisoft APIs, Pandas, and LLMs to fetch player statistics and generate automated tactical coaching strategies.
-2. **[Neural Demand Forecasting Engine](https://github.com/Amlenk/neural-demand-forecast)**: A Keras 3 (PyTorch backend) multi-step LSTM model predicting energy demand with Monte Carlo Dropout uncertainty intervals and unsupervised z-score anomaly detection.
+2. **[SAP S/4HANA Intelligent Procurement & Demand Orchestrator](https://github.com/Amlenk/sap-procurement-orchestrator)**: An enterprise-grade AI pipeline combining a PyTorch attention-based quantile demand LSTM, a local legal RAG contract parser, and simulated FastAPI S/4HANA OData PO replenishment APIs.
 3. **[AetherSens | Pro Mouse Sensitivity Converter](https://github.com/Amlenk/aethersens-converter)**: An elite esports spatial utility integrating an interactive HTML5 Canvas simulator and the Google Antigravity SDK to optimize telemetry translations with 1:1 precision.
 4. **[Delhi LST Bayesian Analysis](https://github.com/Amlenk/delhi-bayesian-lst)**: A PyMC Bayesian regression analysis modeling decadal thermal anomalies in Delhi NCR using a NUTS sampler.
 5. **[Raw Accel Stabilizer Configuration](https://github.com/Amlenk/raw-accel-config)**: A custom mathematical input velocity acceleration stabilizer designed to absorb high-frequency sensor quantization noise spikes from 2000Hz polling rate telemetry.

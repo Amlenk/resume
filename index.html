@@ -422,16 +422,16 @@
       <div class="item">
         <div class="item-header">
           <div>
-            <span class="item-title">Neural Demand Forecasting Engine (LSTM & PyTorch)</span>
-            <span class="item-subtitle">| ML Engineer</span>
+            <span class="item-title">SAP S/4HANA Intelligent Procurement & Demand Orchestrator</span>
+            <span class="item-subtitle">| Lead Machine Learning Engineer</span>
           </div>
           <span class="item-date">Active</span>
         </div>
         <ul>
-          <li>Architected a multi-step deep learning demand forecasting pipeline built on **Keras 3 with a PyTorch Backend**, resampled to hourly intervals to predict grids load 24 hours in advance.</li>
-          <li>Compared **Vanilla, Stacked, and Bidirectional LSTM models**, achieving a **28.8% RMSE improvement (72.54)** over a naïve persistence baseline model.</li>
-          <li>Implemented **Bayesian Uncertainty Quantification** using **Monte Carlo Dropout (100 forward passes)** to estimate prediction interval bandwidths.</li>
-          <li>Deployed an unsupervised residual anomaly detection system that automatically flagged extreme consumption spikes.</li>
+          <li>Designed a PyTorch Attention-based Encoder-Decoder LSTM predicting multi-horizon quantile demand (P<sub>10</sub>, P<sub>50</sub>, P<sub>90</sub>), optimizing Pinball Loss to dynamically set safety-stock thresholds.</li>
+          <li>Engineered a local RAG NLP pipeline parsing unstructured SEC legal contract PDFs (TF-IDF + Cosine Similarity) to extract volume discount pricing tiers, supplier constraints, and SLA lead times.</li>
+          <li>Deployed a sourcing planner and a FastAPI S/4HANA OData simulator (`API_PURCHASEORDER_PROCESS_SRV`) serving real-time Purchase Order replenishments based on stock deficit triggers.</li>
+          <li>Built a glassmorphic control room dashboard visualizing live uncertainty bands and streaming asynchronous agent execution logs.</li>
         </ul>
       </div>
 
