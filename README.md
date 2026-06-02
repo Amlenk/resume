@@ -18,6 +18,7 @@ Explore my core technical projects hosted on GitHub:
 2. **[Neural Demand Forecasting Engine](https://github.com/Amlenk/neural-demand-forecast)**: A Keras 3 (PyTorch backend) multi-step LSTM model predicting energy demand with Monte Carlo Dropout uncertainty intervals and unsupervised z-score anomaly detection.
 3. **[AetherSens | Pro Mouse Sensitivity Converter](https://github.com/Amlenk/aethersens-converter)**: An elite esports spatial utility integrating an interactive HTML5 Canvas simulator and the Google Antigravity SDK to optimize telemetry translations with 1:1 precision.
 4. **[Delhi LST Bayesian Analysis](https://github.com/Amlenk/delhi-bayesian-lst)**: A PyMC Bayesian regression analysis modeling decadal thermal anomalies in Delhi NCR using a NUTS sampler.
+5. **[Raw Accel Stabilizer Configuration](https://github.com/Amlenk/raw-accel-config)**: A custom mathematical input velocity acceleration stabilizer designed to absorb high-frequency sensor quantization noise spikes from 2000Hz polling rate telemetry.
 
 ## 📞 Contact Information
 
