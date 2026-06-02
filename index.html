@@ -29,7 +29,7 @@
       background-color: #f8fafc;
       color: var(--text-color);
       font-family: var(--font-sans);
-      font-size: 10.5pt;
+      font-size: 10pt;
       line-height: 1.45;
       -webkit-font-smoothing: antialiased;
     }
@@ -40,7 +40,7 @@
       width: 210mm;
       min-height: 297mm;
       margin: 20px auto;
-      padding: 15mm 15mm;
+      padding: 10mm 15mm;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
       position: relative;
     }
@@ -106,7 +106,7 @@
 
     /* SECTION LAYOUTS */
     section {
-      margin-bottom: 4mm;
+      margin-bottom: 3.5mm;
     }
 
     h2 {
@@ -133,7 +133,7 @@
 
     /* WORK EXPERIENCE & PROJECTS */
     .item {
-      margin-bottom: 3mm;
+      margin-bottom: 2.2mm;
     }
 
     .item-header {
@@ -170,7 +170,7 @@
     li {
       position: relative;
       padding-left: 4mm;
-      margin-bottom: 0.8mm;
+      margin-bottom: 0.5mm;
       font-size: 9pt;
       color: #334155;
       text-align: justify;
@@ -247,7 +247,7 @@
         width: 210mm;
         height: 297mm;
         margin: 0;
-        padding: 12mm 12mm;
+        padding: 8mm 12mm;
         box-shadow: none;
         page-break-after: always;
       }
@@ -303,7 +303,7 @@
 
   <!-- BROWSER ONLY CONTROLS -->
   <div class="control-bar">
-    <div style="font-size: 10pt; font-weight: 500;">📄 Print Preview | Amlenk GitHub Portfolio Calibrated PDF Output</div>
+    <div style="font-size: 10pt; font-weight: 500;">📄 Print Preview | Aman Lenka General Portfolio Calibrated PDF Output</div>
     <button class="control-btn" onclick="window.print()">Print / Save as PDF</button>
   </div>
 
@@ -323,7 +323,7 @@
     <section>
       <h2>Professional Summary</h2>
       <div class="summary-text">
-        Analytical and results-driven Data & AI professional with a solid engineering background and an MSc in Data Analytics from the National College of Ireland. Specialized in productionizing deep learning forecast engines, computer vision filters, and Generative AI coaching systems. Expert at leveraging state-of-the-art Agentic AI developer platforms (Google Antigravity SDK) to automate code generation, model optimization, and scale complex data pipelines. Proven track record of executing high-impact, real-world projects, including securing competitive research grants for clinically validated medical diagnostics and deploying real-time API integrations. Actively seeking to leverage multidisciplinary AI capabilities, automated analytics, and advanced predictive modeling as a Consultant within Deloitte South Asia's Data & AI practice.
+        Analytical and results-driven Data & AI professional with a solid engineering background and an MSc in Data Analytics from the National College of Ireland. Specialized in productionizing deep learning forecast engines, computer vision filters, and Generative AI coaching systems. Expert at leveraging state-of-the-art Agentic AI developer platforms (Google Antigravity SDK) to automate code generation, model optimization, and scale complex data pipelines. Proven track record of executing high-impact, real-world projects, including securing competitive research grants for clinically validated medical diagnostics, deploying real-time API integrations, and constructing end-to-end decision pipelines that bridge unstructured data with core enterprise databases. Actively seeking to leverage multidisciplinary AI capabilities, automated analytics, and advanced predictive modeling as a Consultant within leading digital transformation and technology advisory practices.
       </div>
     </section>
 
@@ -378,15 +378,8 @@
           <li>Conducted comparative data analysis demonstrating a <strong>65% diagnostic cost reduction</strong> compared to traditional clinical slit lamps without compromising medical diagnostic fidelity.</li>
         </ul>
       </div>
-    </section>
-  </div>
-
-  <!-- PAGE 2 -->
-  <div class="resume-page">
-    <section>
-      <h2>Applied AI & Hardware-Software Projects (Continued)</h2>
       
-      <div class="item" style="margin-top: 1mm;">
+      <div class="item">
         <div class="item-header">
           <div>
             <span class="item-title">Autonomous Surveillance Robot with Real-Time Monitoring</span>
@@ -400,10 +393,45 @@
         </ul>
       </div>
     </section>
+  </div>
 
+  <!-- PAGE 2 -->
+  <div class="resume-page">
     <section>
       <h2>Advanced Data Science & Machine Learning Projects</h2>
       
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">SAP S/4HANA Intelligent Procurement & Demand Orchestrator</span>
+            <span class="item-subtitle">| Lead Machine Learning & ERP Integration Engineer</span>
+          </div>
+          <span class="item-date">Active</span>
+        </div>
+        <ul>
+          <li>Developed a production-grade enterprise AI pipeline bridging deep temporal demand forecasting, contract NLP auditing, and SAP ERP databases.</li>
+          <li>Designed a PyTorch Attention-based Encoder-Decoder LSTM predicting multi-horizon quantile demand (P<sub>10</sub>, P<sub>50</sub>, P<sub>90</sub>), optimizing Pinball Loss to dynamically set safety-stock thresholds under high-variance seasonal cycles.</li>
+          <li>Engineered a local RAG NLP pipeline parsing unstructured SEC legal contract PDFs (TF-IDF + Cosine Similarity) to extract volume discount pricing tiers, supplier constraints, and SLA lead times.</li>
+          <li>Deployed a FastAPI SAP S/4HANA OData simulator (`API_PURCHASEORDER_PROCESS_SRV`, `API_INVENTORY_SRV`) to model end-to-end ERP transaction postings and inventory replenishment, establishing complete readiness for SAP Business Technology Platform (BTP).</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">ChronosFail: Deep Time-to-Event Survival Analysis</span>
+            <span class="item-subtitle">| Lead Machine Learning Engineer</span>
+          </div>
+          <span class="item-date">Active</span>
+        </div>
+        <ul>
+          <li>Architected a PyTorch-based DeepSurv (Deep Cox Proportional Hazards Neural Network) model to predict continuous probability distributions of asset failure over time, replacing reactive point-in-time classification.</li>
+          <li>Engineered an end-to-end data pipeline processing simulated turbofan sensor channels, generating rolling features and censoring indicators into high-performance Parquet stores.</li>
+          <li>Trained a Multi-Layer Proportional Likelihood Neural Network yielding a **Concordance Index (C-Index) &gt; 0.82** and deployed the model as a production FastAPI service providing real-time prognostic RUL predictions.</li>
+          <li>Authored a robust validation suite with PyTest, executing automated unit tests on data features, model weights, and API endpoints.</li>
+        </ul>
+      </div>
+
       <div class="item">
         <div class="item-header">
           <div>
@@ -413,52 +441,35 @@
           <span class="item-date">Active</span>
         </div>
         <ul>
-          <li>Developed an end-to-end data analytics and AI-driven coaching engine utilizing **Streamlit**, **Pandas**, and **LLMs** to ingest, model, and visualize competitive player telemetry.</li>
-          <li>Engineered an **AI Coach module (`ai_coach.py`)** leveraging cognitive models to analyze map layouts, playstyles, and pick/win ratios, generating automated strategic coaching guides.</li>
-          <li>Built a real-time stat-fetching pipeline (`r6data_fetch.py`) integrating with Ubisoft APIs alongside a custom-designed rendering dashboard (`charts.py`, `report.py`).</li>
+          <li>Developed an end-to-end data analytics and AI-driven coaching engine utilizing **Streamlit**, **Pandas**, and **LLMs** to ingest, model, and visualize competitive player telemetry fetched via live Ubisoft APIs.</li>
+          <li>Engineered an **AI Coach module (`ai_coach.py`)** utilizing cognitive frameworks to analyze map layouts, playstyles, and pick/win ratios, generating strategic coaching guides.</li>
         </ul>
       </div>
 
       <div class="item">
         <div class="item-header">
           <div>
-            <span class="item-title">SAP S/4HANA Intelligent Procurement & Demand Orchestrator</span>
-            <span class="item-subtitle">| Lead Machine Learning Engineer</span>
+            <span class="item-title">Neural Demand Forecasting Engine (LSTM & PyTorch)</span>
+            <span class="item-subtitle">| ML Engineer</span>
           </div>
           <span class="item-date">Active</span>
         </div>
         <ul>
-          <li>Designed a PyTorch Attention-based Encoder-Decoder LSTM predicting multi-horizon quantile demand (P<sub>10</sub>, P<sub>50</sub>, P<sub>90</sub>), optimizing Pinball Loss to dynamically set safety-stock thresholds.</li>
-          <li>Engineered a local RAG NLP pipeline parsing unstructured SEC legal contract PDFs (TF-IDF + Cosine Similarity) to extract volume discount pricing tiers, supplier constraints, and SLA lead times.</li>
-          <li>Deployed a sourcing planner and a FastAPI S/4HANA OData simulator (`API_PURCHASEORDER_PROCESS_SRV`) serving real-time Purchase Order replenishments based on stock deficit triggers.</li>
-          <li>Built a glassmorphic control room dashboard visualizing live uncertainty bands and streaming asynchronous agent execution logs.</li>
+          <li>Architected a multi-step deep learning forecasting pipeline built on **Keras 3 (PyTorch Backend)** to predict grid load 24 hours in advance, comparing Vanilla, Stacked, and Bidirectional LSTM models (**RMSE: 72.54**).</li>
+          <li>Quantified prediction uncertainties utilizing **Monte Carlo Dropout (100 forward passes)**.</li>
         </ul>
       </div>
 
       <div class="item">
         <div class="item-header">
           <div>
-            <span class="item-title">Esports Input Telemetry & Spatial Sensitivity Optimizers (AetherSens & Raw Accel)</span>
+            <span class="item-title">Esports Spatial Sensitivity Optimizer (AetherSens)</span>
             <span class="item-subtitle">| Lead Developer</span>
           </div>
           <span class="item-date">Active</span>
         </div>
         <ul>
-          <li>Developed a high-precision sensitivity scaling tool using the **Google Antigravity SDK** to build agentic testing and code-generation workflows, accelerating prototyping speed by <strong>40%</strong>.</li>
-          <li>Designed a custom mathematical input velocity stabilizer using a quadratic curve (Power: 2.0) and an 8.75 IPS deadzone to filter high-frequency 2000Hz sensor quantization noise, hard-capping output multipliers at 1.25x.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <div>
-            <span class="item-title">Delhi LST Bayesian Analysis & Regional Heat Projections</span>
-            <span class="item-subtitle">| Lead Data Scientist</span>
-          </div>
-          <span class="item-date">Active</span>
-        </div>
-        <ul>
-          <li>Built a PyMC-based Bayesian linear regression model using a **NUTS sampler** to estimate the posterior distribution of the annual warming trend (+0.25°C/year) and generated 94% High-Density Interval (HDI) projections.</li>
+          <li>Developed a high-precision spatial sensitivity scaling tool using the **Google Antigravity SDK** to build agentic testing and code-generation workflows, accelerating prototyping speed by **40%**.</li>
         </ul>
       </div>
     </section>
@@ -505,19 +516,19 @@
       <div class="skills-grid">
         <div class="skills-row">
           <span class="skills-category">Machine Learning & AI</span>
-          <span class="skills-values">Generative AI (LLMs, Claude API, agentic systems), Deep Learning (LSTMs, PyTorch backend), NLP (BERT), Computer Vision (OpenCV), Bayesian Statistics (PyMC, MCMC)</span>
+          <span class="skills-values">Deep Survival Analysis (DeepSurv, Cox hazards), Deep Learning (PyTorch, Keras 3), Generative AI (LLMs, Claude API, RAG, agentic workflows), Computer Vision (OpenCV), Bayesian Statistics (PyMC, MCMC)</span>
+        </div>
+        <div class="skills-row">
+          <span class="skills-category">Enterprise & SAP</span>
+          <span class="skills-values">SAP S/4HANA Core Modules, OData REST APIs, SAP BTP Integration Concepts, Corporate Procurement Schemas, FastAPI REST Services</span>
         </div>
         <div class="skills-row">
           <span class="skills-category">Programming & Data</span>
-          <span class="skills-values">Python (pandas, NumPy, scikit-learn, PyMC, PyTorch, Keras 3, PySpark), SQL (PostgreSQL, MySQL, SQLite)</span>
+          <span class="skills-values">Python (pandas, NumPy, scikit-learn, PyMC, PyTorch, Keras 3, PySpark), SQL (PostgreSQL, SQLite, MySQL)</span>
         </div>
         <div class="skills-row">
-          <span class="skills-category">Data Visualization & BI</span>
-          <span class="skills-values">Power BI, Tableau, Streamlit, Matplotlib, Seaborn, Plotly</span>
-        </div>
-        <div class="skills-row">
-          <span class="skills-category">Tools & Environments</span>
-          <span class="skills-values"><strong>Google Antigravity SDK</strong>, <strong>Agentic AI Dev Tools</strong>, Git, Docker, VS Code, Jupyter, Flask, FastAPI</span>
+          <span class="skills-category">Tools & Visualization</span>
+          <span class="skills-values">**Google Antigravity SDK**, **PyTest**, Git, Docker, VS Code, Streamlit, Power BI, Tableau, Flask</span>
         </div>
       </div>
     </section>
