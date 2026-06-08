@@ -23,5 +23,5 @@ Explore my core technical projects hosted on GitHub:
 ## 📞 Contact Information
 
 * **Email:** [amanlenka97@gmail.com](mailto:amanlenka97@gmail.com)
-* **Phone:** +91 9810723018
+* **Phone:** +91 9003741343
 * **LinkedIn:** *[Add your LinkedIn profile URL once live]*
