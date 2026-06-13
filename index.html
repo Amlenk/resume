@@ -395,11 +395,11 @@
           <span class="item-date">Dec 2024 – Present</span>
         </div>
         <ul>
-          <li>Developed a <strong>Keras 3 deep neural network</strong> with a <strong>PyTorch backend</strong> to predict 30-day patient readmissions, bypassing hardware compile limitations and achieving <strong>61.74% accuracy</strong> and <strong>0.658 AUC-ROC</strong>.</li>
-          <li>Engineered domain-specific clinical features (e.g., medication density per day, lab procedures density, and historical healthcare utilization index) <em>prior</em> to scaling, boosting model accuracy by <strong>0.5%</strong> and AUC by <strong>0.01</strong>.</li>
-          <li>Integrated <strong>Explainable AI (SHAP KernelExplainer)</strong> to extract global and patient-specific Shapley values, providing clinical interpretability to resolve deep learning black-box constraints.</li>
-          <li>Built and deployed an interactive <strong>Streamlit web application</strong> utilizing model checkpoints and serialized scaling objects to serve real-time clinical triage risk scores.</li>
-          <li>Compared optimized deep models against traditional baselines including Random Forest, XGBoost, and Logistic Regression using <strong>Stratified 5-Fold Cross-Validation</strong> loops.</li>
+          <li>Developed a <strong>Keras 3 deep neural network</strong> with a <strong>PyTorch backend</strong> to predict 30-day patient readmissions, utilizing <strong>Optuna (TPE Sampler)</strong> for Bayesian hyperparameter optimization to achieve <strong>62.28% out-of-fold accuracy</strong> and <strong>0.6613 AUC-ROC</strong>.</li>
+          <li>Engineered 13 domain-specific clinical features (e.g., daily medication intensity, comorbidity index, therapy intensification) <em>prior</em> to scaling, boosting model accuracy by <strong>0.54%</strong> and AUC by <strong>0.0033</strong> over the baseline network.</li>
+          <li>Integrated <strong>Explainable AI (SHAP KernelExplainer)</strong> to extract global and patient-specific Shapley values, rendering interactive risk-factor waterfall explanations.</li>
+          <li>Built and deployed an interactive <strong>Streamlit web application</strong> importing the training pipeline's exact preprocessing logic to prevent feature drift and serve real-time clinical triage risk scores.</li>
+          <li>Compared optimized deep models against traditional baselines including Random Forest, XGBoost, and Logistic Regression using <strong>Stratified 5-Fold Cross-Validation</strong>.</li>
         </ul>
       </div>
     </section>
